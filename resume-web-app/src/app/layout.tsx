@@ -1,4 +1,7 @@
 // app/layout.tsx
+
+import './globals.css';
+
 export const metadata = {
   title: 'Resume - River Smith',
   description: 'Resume of River Smith',
