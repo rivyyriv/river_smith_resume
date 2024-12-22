@@ -5,7 +5,7 @@
 
 import Head from 'next/head';
 
-const calculateDuration = (startDate) => {
+const calculateDuration = (startDate: string): { years: number; months: number } => {
   const start = new Date(startDate);
   const now = new Date();
   const years = now.getFullYear() - start.getFullYear();
