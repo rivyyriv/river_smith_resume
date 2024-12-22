@@ -4,6 +4,7 @@
 // npx create-next-app@latest resume-web-app --typescript
 
 import Head from 'next/head';
+import Link from 'next/link';
 
 const calculateDuration = (startDate: string): { years: number; months: number } => {
   const start = new Date(startDate);
@@ -17,10 +18,6 @@ const calculateDuration = (startDate: string): { years: number; months: number }
 const Resume = () => {
   const { years, months } = calculateDuration('2021-09-01');
 
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
     <div className="p-8 max-w-6xl mx-auto bg-gray-50 shadow-lg rounded-lg grid md:grid-cols-3 gap-8">
       <Head>
@@ -29,12 +26,12 @@ const Resume = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <button
-        onClick={handlePrint}
-        className="fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 print:hidden"
+      <Link
+        href="/pagePrint"
+        className="fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
         Print Resume
-      </button>
+      </Link>
 
       <aside className="md:col-span-1 bg-gray-800 text-white rounded-lg p-6">
         <img
@@ -128,17 +125,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
-// Ensure you have Tailwind CSS set up in your Next.js project.
-// Install Tailwind CSS by running:
-// npm install -D tailwindcss postcss autoprefixer
-// npx tailwindcss init
-
-// Update your `tailwind.config.js`:
-// module.exports = {
-//   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
