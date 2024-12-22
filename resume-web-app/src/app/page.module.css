@@ -1,0 +1,49 @@
+/* styles/page.module.css */
+.container {
+    padding: 0 2rem;
+  }
+  
+  .main {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    margin: 2rem 0;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .section p,
+  .section ul {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .section ul {
+    padding-left: 1.5rem;
+  }
+  
+  .footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #777;
+  }
+  
