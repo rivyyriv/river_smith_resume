@@ -67,9 +67,9 @@ const PrintResume = () => {
             <h3 className="font-semibold text-base">Software Engineer - Nyah Digital</h3>
             <p className="text-sm text-gray-700">February, 2020 - August, 2021</p>
             <ul className="list-disc pl-4 text-sm">
-              <li>Designed, developed, and implemented customized web solutions for clients, increasing client engagement by 25%.</li>
-              <li>Provided technical support during and after project implementations, achieving a 95% client satisfaction rate.</li>
-              <li>Optimized website performance and scalability, reducing page load time by 30% and enhancing user experience.</li>
+              <li>Designed, developed, and implemented customized web solutions for clients.</li>
+              <li>Provided technical support during and after project implementations.</li>
+              <li>Optimized website performance and scalability.</li>
             </ul>
           </div>
           <div className="mb-4">
@@ -77,7 +77,7 @@ const PrintResume = () => {
             <p className="text-sm text-gray-700">June, 2015 - November, 2019</p>
             <ul className="list-disc pl-4 text-sm">
               <li>Met with homeowners door-to-door or over the phone to prospect and present tailored smart home and solar solutions.</li>
-              <li>Effectively communicated product benefits, driving a 30% increase in successful conversions and boosting customer satisfaction.</li>
+              <li>Effectively communicated product benefits.</li>
               <li>Consistently exceeded monthly sales targets, contributing to the team’s overall performance growth.</li>
             </ul>
           </div>

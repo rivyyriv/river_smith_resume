@@ -46,9 +46,9 @@ const Resume = () => {
 
       <Link
         href="/pagePrint"
-        className="fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="fixed top-2 right-2 bg-blue-500 text-white px-2 py-2 rounded shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
-        Print Resume
+        PDF
       </Link>
 
       <aside className="md:col-span-1 bg-gray-800 text-white rounded-lg p-6">
@@ -119,9 +119,9 @@ const Resume = () => {
               <h3 className="font-bold text-lg">Software Engineer - Nyah Digital</h3>
               <p className="text-sm text-gray-500">February, 2020 - August, 2021</p>
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
-                <li>Designed, developed, and implemented customized web solutions for clients, increasing client engagement by 25%.</li>
-                <li>Provided technical support during and after project implementations, achieving a 95% client satisfaction rate.</li>
-                <li>Optimized website performance and scalability, reducing page load time by 30% and enhancing user experience.</li>
+                <li>Designed, developed, and implemented customized web solutions for clients.</li>
+                <li>Provided technical support during and after project implementations.</li>
+                <li>Optimized website performance and scalability.</li>
               </ul>
             </div>
 
