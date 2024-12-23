@@ -1,10 +1,8 @@
 "use client";
 
-// Install Next.js by running:
-// npx create-next-app@latest resume-web-app --typescript
-
 import Head from 'next/head';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const calculateDuration = (startDate: string): { years: number; months: number } => {
   const start = new Date(startDate);
@@ -15,8 +13,28 @@ const calculateDuration = (startDate: string): { years: number; months: number }
   return { years: Math.floor(totalMonths / 12), months: totalMonths % 12 };
 };
 
+const projects = [
+  {
+    title: "Simple Instagram Clone",
+    link: "https://github.com/rivyyriv/instagram-clone",
+  },
+  {
+    title: "ios-classifieds",
+    link: "https://github.com/rivyyriv/ios-classifieds",
+  }
+];
+
 const Resume = () => {
   const { years, months } = calculateDuration('2021-09-01');
+  const [currentProject, setCurrentProject] = useState(0);
+
+  const handleNextProject = () => {
+    setCurrentProject((prev) => (prev + 1) % projects.length);
+  };
+
+  const handlePreviousProject = () => {
+    setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
+  };
 
   return (
     <div className="p-8 max-w-6xl mx-auto bg-gray-50 shadow-lg rounded-lg grid md:grid-cols-3 gap-8">
@@ -47,8 +65,8 @@ const Resume = () => {
         <h3 className="text-lg font-semibold mt-8 mb-4">Contact</h3>
         <ul className="text-sm">
           <li>Email: rivyyriv@gmail.com</li>
-          <li>LinkedIn: www.linkedin.com/in/river-smith-945394133</li>
-          <li>GitHub: www.github/rivyyriv.com</li>
+          <li>LinkedIn: linkedin.com/in/river-smith-945394133</li>
+          <li>GitHub: github.com/rivyyriv</li>
         </ul>
 
         <h3 className="text-lg font-semibold mt-8 mb-4">Skills</h3>
@@ -80,8 +98,9 @@ const Resume = () => {
               <h3 className="font-bold text-lg">Enterprise API Solutions Engineer - Mastercard</h3>
               <p className="text-sm text-gray-500">December, 2023 - Present</p>
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
-                <li>Collaborated with enterprise partners to integrate the Finicity API, addressing unique business needs.</li>
-                <li>Worked with internal product teams to align solutions with customer requirements.</li>
+                <li>Assisted in generating $1.6M in recurring revenue by providing tailored API solutions to enterprise clients.</li>
+                <li>Collaborated with enterprise partners to integrate the Finicity API, addressing unique business needs and enhancing operational efficiency.</li>
+                <li>Worked with internal product teams to align API solutions with customer requirements, ensuring seamless implementation and client satisfaction.</li>
               </ul>
             </div>
 
@@ -90,8 +109,9 @@ const Resume = () => {
               <p className="text-sm text-gray-500">August, 2021 - December, 2023</p>
               <p className="text-sm text-gray-600">Duration: {years} years and {months} months</p>
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
-                <li>Implemented Finicity API solutions for enterprise partners, ensuring secure and efficient data integration.</li>
-                <li>Diagnosed complex product bugs and collaborated with product teams for resolutions.</li>
+                <li>Implemented Finicity API solutions for enterprise partners, resulting in improved data integration and client satisfaction.</li>
+                <li>Diagnosed and resolved complex product bugs, collaborating with product teams to deliver efficient and timely fixes.</li>
+                <li>Optimized API integration workflows, cutting implementation time by 20% on average and boosting project efficiency across multiple clients.</li>
               </ul>
             </div>
 
@@ -99,8 +119,19 @@ const Resume = () => {
               <h3 className="font-bold text-lg">Software Engineer - Nyah Digital</h3>
               <p className="text-sm text-gray-500">February, 2020 - August, 2021</p>
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
-                <li>Designed, developed, and implemented customized web solutions for clients.</li>
-                <li>Provided technical support during and after project implementations.</li>
+                <li>Designed, developed, and implemented customized web solutions for clients, increasing client engagement by 25%.</li>
+                <li>Provided technical support during and after project implementations, achieving a 95% client satisfaction rate.</li>
+                <li>Optimized website performance and scalability, reducing page load time by 30% and enhancing user experience.</li>
+              </ul>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="font-bold text-lg">Sales Representative - Vivint</h3>
+              <p className="text-sm text-gray-500">June, 2015 - November, 2019</p>
+              <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
+                <li>Met with homeowners door-to-door or over the phone to prospect and present tailored smart home and solar solutions.</li>
+                <li>Effectively communicated product benefits, driving an increase in successful conversions and boosting customer satisfaction.</li>
+                <li>Consistently exceeded monthly sales targets, contributing to the team’s overall performance growth.</li>
               </ul>
             </div>
           </div>
@@ -112,10 +143,51 @@ const Resume = () => {
             <div className="mb-8">
               <h3 className="font-bold text-lg">BloomTech</h3>
               <p className="text-sm text-gray-500">Computer Software Engineering (February, 2020 - January, 2022)</p>
+              <p className="text-sm text-gray-600 mt-2">
+                Certificate - Full Stack Web Engineering
+              </p>
+              <ul className="list-disc pl-6 text-sm mt-2">
+                <li>Attended code lectures, developed and deployed Full Stack Web applications using the following technologies:</li>
+                <li>HTML, CSS, Git, JavaScript, and UI Principles</li>
+                <li>React, Redux, React Router, HTTP/Ajax, and Functional Programming Techniques</li>
+                <li>Advanced React, State Management, and Web Applications</li>
+                <li>Node.js Web APIs, Data Persistence, Authentication, and Testing</li>
+                <li>Python, OOP, Algorithms, Data Structures, Graphs, and Hash Tables</li>
+              </ul>
             </div>
-            <div className="mb-8">
+            <div className="mb-2">
               <h3 className="font-bold text-lg">Utah Valley University</h3>
               <p className="text-sm text-gray-500">General Studies (2018 - 2019)</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-3xl font-semibold mb-6 text-gray-700">Projects</h2>
+          <div className="text-center">
+            <div className="p-4 border border-gray-300 rounded-md shadow-md">
+              <h3 className="font-bold text-lg">{projects[currentProject].title}</h3>
+              <p className="text-sm mt-2">{projects[currentProject].description}</p>
+            <Link
+                href={projects[currentProject].link}
+                className="text-blue-500 hover:underline mt-4 block"
+              >
+                View Project
+              </Link>
+            </div>
+            <div className="flex justify-center mt-4 space-x-4">
+              <button
+                onClick={handlePreviousProject}
+                className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+              >
+                Previous
+              </button>
+              <button
+                onClick={handleNextProject}
+                className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+              >
+                Next
+              </button>
             </div>
           </div>
         </section>
@@ -125,3 +197,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
