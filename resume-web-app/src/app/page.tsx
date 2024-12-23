@@ -167,7 +167,6 @@ const Resume = () => {
           <div className="text-center">
             <div className="p-4 border border-gray-300 rounded-md shadow-md">
               <h3 className="font-bold text-lg">{projects[currentProject].title}</h3>
-              <p className="text-sm mt-2">{projects[currentProject].description}</p>
             <Link
                 href={projects[currentProject].link}
                 className="text-blue-500 hover:underline mt-4 block"
