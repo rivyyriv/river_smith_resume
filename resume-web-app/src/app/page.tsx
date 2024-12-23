@@ -97,6 +97,8 @@ const Resume = () => {
             <div className="mb-8">
               <h3 className="font-bold text-lg">Enterprise API Solutions Engineer - Mastercard</h3>
               <p className="text-sm text-gray-500">December, 2023 - Present</p>
+              <p className="text-sm text-gray-600">Mastercard Duration: {years} years and {months} months</p>
+
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
                 <li>Assisted in generating $1.6M in recurring revenue by providing tailored API solutions to enterprise clients.</li>
                 <li>Collaborated with enterprise partners to integrate the Finicity API, addressing unique business needs and enhancing operational efficiency.</li>
@@ -106,7 +108,7 @@ const Resume = () => {
 
             <div className="mb-8">
               <h3 className="font-bold text-lg">API Solutions Engineer - Mastercard</h3>
-              <p className="text-sm text-gray-500">August, 2021 - December, 2023</p>
+              <p className="text-sm text-gray-500">August, 2021 - Now</p>
               <p className="text-sm text-gray-600">Duration: {years} years and {months} months</p>
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
                 <li>Implemented Finicity API solutions for enterprise partners, resulting in improved data integration and client satisfaction.</li>
