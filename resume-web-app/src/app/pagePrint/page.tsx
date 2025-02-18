@@ -37,8 +37,7 @@ const PrintResume = () => {
       <section className="mb-6">
         <h2 className="text-lg font-bold border-b pb-2">Professional Summary</h2>
         <p className="text-sm text-gray-600 mt-4">
-          Experienced Solutions Engineer with a proven track record of generating $1.6M in recurring revenue, delivering innovative API solutions, and optimizing workflows to increase efficiency.
-        </p>
+        Experienced Solutions Engineer with a 2024 track record of generating $1.6M in recurring revenue by leveraging pre-sales and post-sales expertise. Skilled in delivering innovative technical solutions, building value, and driving successful implementations    </p>
       </section>
 
       <section className="mb-6">
@@ -50,9 +49,9 @@ const PrintResume = () => {
             <p className="text-sm text-gray-600">Mastercard Duration: {years} years and {months} months</p>
 
             <ul className="list-disc pl-4 text-sm">
-              <li>Assisted in generating $1.6M in recurring revenue by providing tailored API solutions to enterprise clients.</li>
-              <li>Collaborated with enterprise partners to integrate the Finicity API, addressing unique business needs and enhancing operational efficiency.</li>
-              <li>Worked with internal product teams to align API solutions with customer requirements, ensuring seamless implementation and client satisfaction.</li>
+            <li>Assisted AEs and CSMs in generating $1.6M in recurring revenue by leveraging pre-sales value building and sales engineering expertise to deliver tailored API solutions to enterprise clients, while also providing comprehensive post-sales implementation, integration, and troubleshooting support.</li>
+              <li>Collaborated with enterprise partners to integrate the Finicity API, addressing unique business needs and enhancing operational efficiency while supporting robust post-sales processes.</li>
+              <li>Worked with internal product teams to align API solutions with customer requirements, ensuring seamless implementation and comprehensive post-sales support for integration and troubleshooting.</li>
             </ul>
           </div>
           <div className="mb-4">
@@ -62,16 +61,17 @@ const PrintResume = () => {
             <ul className="list-disc pl-4 text-sm">
               <li>Implemented Finicity API solutions for enterprise partners, resulting in improved data integration and client satisfaction.</li>
               <li>Diagnosed and resolved complex product bugs, collaborating with product teams to deliver efficient and timely fixes.</li>
-              <li>Optimized API integration workflows, cutting implementation time by 20% on average and boosting project efficiency across multiple clients.</li>
             </ul>
           </div>
           <div className="mb-4">
             <h3 className="font-semibold text-base">Software Engineer - Nyah Digital</h3>
             <p className="text-sm text-gray-700">February, 2020 - August, 2021</p>
             <ul className="list-disc pl-4 text-sm">
-              <li>Designed, developed, and implemented customized web solutions for clients.</li>
-              <li>Provided technical support during and after project implementations.</li>
-              <li>Optimized website performance and scalability.</li>
+              <li>Designed, developed, and implemented custom web solutions, ensuring scalability, performance, and seamless API integration with platforms like GCP, AWS, Twilio, and Stripe.</li>
+              <li>Guided clients through API integrations with microservices, providing technical support from implementation to post-go-live optimization.
+              </li>
+              <li>Collaborated cross-functionally to align technical solutions with business goals, ensuring smooth deployment and client success.
+              </li>
             </ul>
           </div>
           <div className="mb-4">
@@ -104,22 +104,18 @@ const PrintResume = () => {
               <li>Python, OOP, Algorithms, Data Structures, Graphs, and Hash Tables</li>
             </ul>
           </div>
-          <div className="mb-2">
-            <h3 className="font-semibold text-base">Utah Valley University</h3>
-            <p className="text-sm text-gray-700">General Studies (2018 - 2019)</p>
-          </div>
         </div>
       </section>
 
       <section className="mb-6">
         <h2 className="text-lg font-bold border-b pb-2">Skills</h2>
         <ul className="list-disc pl-6 text-sm mt-4 grid grid-cols-2 gap-2">
-          <li>Webhooks</li>
-          <li>HTTP</li>
-          <li>Express.js</li>
-          <li>React</li>
+          <li>REST, HTTP, Webhooks</li>
+          <li>JaveScript, Node.js. React.js</li>
+          <li>SCRUM, AGILE</li>
           <li>Next.js</li>
-          <li>Tailwind CSS</li>
+          <li>Sales, Engineering, Value Building</li>
+          <li>CSS</li>
         </ul>
       </section>
 

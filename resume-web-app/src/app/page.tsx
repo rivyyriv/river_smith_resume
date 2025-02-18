@@ -15,6 +15,10 @@ const calculateDuration = (startDate: string): { years: number; months: number }
 
 const projects = [
   {
+    title: "Receptor Intelligence",
+    link: "https://receptor-intelligence-river-smiths-projects-a61e9b4a.vercel.app/",
+  },
+  {
     title: "Simple Instagram Clone",
     link: "https://github.com/rivyyriv/instagram-clone",
   },
@@ -59,8 +63,7 @@ const Resume = () => {
         />
         <h2 className="text-2xl font-bold text-center mb-4">River Smith</h2>
         <p className="text-sm text-center mb-4">
-          Solutions Engineer specializing in crafting technical solutions to complex business problems, ensuring innovative and effective results.
-        </p>
+        Experienced Solutions Engineer with a 2024 track record of generating $1.6M in recurring revenue by leveraging pre-sales and post-sales expertise. Skilled in delivering innovative technical solutions, building value, and driving successful implementations        </p>
 
         <h3 className="text-lg font-semibold mt-8 mb-4">Contact</h3>
         <ul className="text-sm">
@@ -71,12 +74,12 @@ const Resume = () => {
 
         <h3 className="text-lg font-semibold mt-8 mb-4">Skills</h3>
         <ul className="list-disc pl-6 text-sm">
-          <li>Webhooks</li>
-          <li>HTTP</li>
-          <li>Express.js</li>
-          <li>React</li>
+        <li>REST, HTTP, Webhooks</li>
+          <li>JaveScript, Node.js. React.js</li>
+          <li>SCRUM, AGILE</li>
           <li>Next.js</li>
-          <li>Tailwind CSS</li>
+          <li>Sales, Engineering, Value Building</li>
+          <li>CSS</li>
         </ul>
 
         <h3 className="text-lg font-semibold mt-8 mb-4">Certifications</h3>
@@ -100,10 +103,11 @@ const Resume = () => {
               <p className="text-sm text-gray-600">Mastercard Duration: {years} years and {months} months</p>
 
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
-                <li>Assisted in generating $1.6M in recurring revenue by providing tailored API solutions to enterprise clients.</li>
-                <li>Collaborated with enterprise partners to integrate the Finicity API, addressing unique business needs and enhancing operational efficiency.</li>
-                <li>Worked with internal product teams to align API solutions with customer requirements, ensuring seamless implementation and client satisfaction.</li>
-              </ul>
+              <li>Assisted AEs and CSMs in generating $1.6M in recurring revenue by leveraging pre-sales value building and sales engineering expertise to deliver tailored API solutions to enterprise clients, while also providing comprehensive post-sales implementation, integration, and troubleshooting support.</li>
+              <li>Collaborated with enterprise partners to integrate the Finicity API, addressing unique business needs and enhancing operational efficiency while supporting robust post-sales processes.</li>
+              <li>Worked with internal product teams to align API solutions with customer requirements, ensuring seamless implementation and comprehensive post-sales support for integration and troubleshooting.</li>
+
+             </ul>
             </div>
 
             <div className="mb-8">
@@ -121,9 +125,11 @@ const Resume = () => {
               <h3 className="font-bold text-lg">Software Engineer - Nyah Digital</h3>
               <p className="text-sm text-gray-500">February, 2020 - August, 2021</p>
               <ul className="list-disc pl-6 text-sm text-gray-600 mt-2">
-                <li>Designed, developed, and implemented customized web solutions for clients.</li>
-                <li>Provided technical support during and after project implementations.</li>
-                <li>Optimized website performance and scalability.</li>
+              <li>Designed, developed, and implemented custom web solutions, ensuring scalability, performance, and seamless API integration with platforms like GCP, AWS, Twilio, and Stripe.</li>
+              <li>Guided clients through API integrations with microservices, providing technical support from implementation to post-go-live optimization.
+              </li>
+              <li>Collaborated cross-functionally to align technical solutions with business goals, ensuring smooth deployment and client success.
+              </li>
               </ul>
             </div>
 
@@ -156,10 +162,6 @@ const Resume = () => {
                 <li>Node.js Web APIs, Data Persistence, Authentication, and Testing</li>
                 <li>Python, OOP, Algorithms, Data Structures, Graphs, and Hash Tables</li>
               </ul>
-            </div>
-            <div className="mb-2">
-              <h3 className="font-bold text-lg">Utah Valley University</h3>
-              <p className="text-sm text-gray-500">General Studies (2018 - 2019)</p>
             </div>
           </div>
         </section>
