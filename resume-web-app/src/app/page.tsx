@@ -56,19 +56,21 @@ const Resume = () => {
       </Link>
 
       <aside className="md:col-span-1 bg-gray-800 text-white rounded-lg p-6">
-        <img
+        {/* <img
           src="/profile.jpg"
           alt="River Smith"
           className="rounded-full w-32 mx-auto mb-6"
-        />
+        /> */}
         <h2 className="text-2xl font-bold text-center mb-4">River Smith</h2>
         <p className="text-sm text-center mb-4">
         Experienced Solutions Engineer with a 2024 track record of generating $1.6M in recurring revenue by leveraging pre-sales and post-sales expertise. Skilled in delivering innovative technical solutions, building value, and driving successful implementations        </p>
 
         <h3 className="text-lg font-semibold mt-8 mb-4">Contact</h3>
         <ul className="text-sm">
-          <li>Email: rivyyriv@gmail.com</li>
-          <li>LinkedIn: linkedin.com/in/river-smith-945394133</li>
+          <li>rivyyriv@gmail.com</li>
+          <li>801-850-7012</li>
+          <br/>
+          <li>linkedin.com/in/river-smith-945394133</li>
           <li>GitHub: github.com/rivyyriv</li>
         </ul>
 
@@ -85,11 +87,6 @@ const Resume = () => {
         <h3 className="text-lg font-semibold mt-8 mb-4">Certifications</h3>
         <ul className="text-sm">
           <li>Full-Stack Web Development + Technical Interviewing</li>
-        </ul>
-
-        <h3 className="text-lg font-semibold mt-8 mb-4">Honors</h3>
-        <ul className="text-sm">
-          <li>Eagle Scout</li>
         </ul>
       </aside>
 

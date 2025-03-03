@@ -29,6 +29,7 @@ const PrintResume = () => {
         </p>
         <div className="mt-4 text-sm text-gray-700">
           <p><i className="fas fa-envelope mr-2"></i> rivyyriv@gmail.com</p>
+          <p><i className="fas fa-envelope mr-2"></i> 801-850-7012</p>
           <p><i className="fas fa-linkedin mr-2"></i> linkedin.com/in/river-smith-945394133</p>
           <p><i className="fas fa-github mr-2"></i> github.com/rivyyriv</p>
         </div>
